@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodZone</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="shortcut icon" href="l.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <style>
+    img:hover {
+      transform: scale(1.1);
+      transition: 0.7s;
+      box-shadow: 0px 0px 5px 5px #aeacac;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="l.png" width="50" height="50" style="border-radius:50%;"> FoO<span style="font-style: italic;">D</span>ZOnE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#food">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#su">SIGN UP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#P">PAYMENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#c">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- food -->
+  <div class="container mt-5" id="food" data-aos="zoom-in">
+    <h1 class="text-center" style="margin-top: 80px;">Menu</h1>
+
+    <div class="row mt-4">
+      <!-- First Column (Stream Momo) -->
+      <div class="col-sm-4 mb-4">
+        <div class="card" style="width:100%">
+          <img class="card-img-top" src="stream momo.jpg" alt="Stream Momo" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h4 class="card-title">Stream Momo</h4>
+            <p class="card-text">Rs.50 <br> Enjoy your evening with momo.</p>
+            <label for="q">Quantity</label>
+            <select name="quantity"  id="p1">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br><br>
+            <a href="#su" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Column (Noodles) -->
+      <div class="col-sm-4 mb-4">
+        <div class="card" style="width:100%">
+          <img class="card-img-top" src="noodles.jpg" alt="Noodles" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h4 class="card-title">Noodles</h4>
+            <p class="card-text">Rs.100 <br> Order your noodle with your favorite veggies.</p>
+            <label for="q">Quantity</label>
+            <select name="quantity"  id="p2">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br><br>
+            <a href="#su" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Column (Pizza) -->
+      <div class="col-sm-4 mb-4">
+        <div class="card" style="width:100%">
+          <img class="card-img-top" src="pizza.jpg" alt="Pizza" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h4 class="card-title">Pizza</h4>
+            <p class="card-text">Rs.150 <br> Taste your pizza with your favorite toppings.</p>
+            <label for="q">Quantity</label>
+            <select name="quantity" id="p3">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br><br>
+            <a href="#su" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row mt-4">
+      <!-- First Column (Fried Rice & Chilli Chicken) -->
+      <div class="col-sm-4 mb-4">
+        <div class="card" style="width:100%">
+          <img class="card-img-top" src="rice chicken.jpg" alt="Fried Rice & Chilli Chicken"
+            style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h4 class="card-title">Fried Rice & Chilli Chicken</h4>
+            <p class="card-text">Rs.250 <br> Create your dinner very special.</p>
+            <label for="q">Quantity</label>
+            <select name="quantity" id="p4">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br><br>
+            <a href="#su" class="btn btn-primary" >Order</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Column (Fish Kabiraji) -->
+      <div class="col-sm-4 mb-4">
+        <div class="card" style="width:100%">
+          <img class="card-img-top" src="fish kabiraji.jpg" alt="Fish Kabiraji" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h4 class="card-title">Fish Kabiraji</h4>
+            <p class="card-text">Rs.150 <br> Enjoy your movie time at your home.</p>
+            <label for="q">Quantity</label>
+            <select name="quantity" id="p5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br><br>
+            <a href="#su" class="btn btn-primary" >Order</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Column (Biryani) -->
+      <div class="col-sm-4 mb-4">
+        <div class="card" style="width:100%">
+          <img class="card-img-top" src="biryani.jpg" alt="Biryani" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h4 class="card-title">Biryani</h4>
+            <p class="card-text" >Rs.150 <br> Give your treat to your friends and enjoy.</p>
+            <label for="q">Quantity</label>
+            <select name="quantity" id="p6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br><br>
+            <a href="#su" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- sige up -->
+  <div class="container p-2 mt-3 pb-3" id="su" style="background-color: antiquewhite;" data-aos="fade-up">
+    <h1 class="text-center mt-5">Sign up</h1>
+    <form  onsubmit="return fun()">
+      <div class="mb-3 mt-3">
+        <label for="name" class="form-label">Name</label>
+        <input  type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="number" class="form-label">Phone Number</label>
+        <input  type="number" class="form-control" id="number" placeholder="Enter Number" name="number">
+      </div>
+      <div class="mb-3">
+        <label for="add" class="form-label">Address</label>
+        <input   type="address" class="form-control" id="add" placeholder="Enter Address" name="address">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input   type="password" class="form-control" id="pwd" placeholder="Enter Password" name="password">
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input   class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+
+  </div>
+
+  <!-- PAYMENT -->
+  <div class="container" id="P" data-aos="fade-left">
+    <h2 class="text-center mt-3">We accept payments</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-sm-4 d-flex justify-content-center">
+        <img src="upi.jpg" alt="upi" width="200" height="200" style="border-radius: 50%;">
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <img src="card payment.jpeg" alt="card" width="200" height="200" style="border-radius: 50%;">
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <img src="cod.jpg" alt="cod" width="200" height="200" style="border-radius: 50%;">
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h5><b>ABOUT US</b></h5>
+        <p>We provide food 24*7 hours and cook by ourselve and delivery on time. </p>
+      </div>
+      <div class="col-sm-4">
+        <h5>Quicks links</h5>
+        <ul style="list-style-type: none;">
+          <li>Menu</li>
+          <li>About Us</li>
+          <li>Contact </li>
+          <li>services</li>
+        </ul>
+
+      </div>
+      <div class="col-sm-4">
+        <h5>Contact US</h5>
+        <p>+1234567890</p>
+
+        <p>abc@gmail.com</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--contract-->
+  <div class="container" id="c" data-aos="fade-right">
+    <div class="row justify-content-center">
+      <h5 class="text-center">CONTRACT</h5>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <img src="call.png" alt="call" height="120px" width="120px">
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <img src="whatsapp.jpg" alt="whatsapp" height="120px" width="120px">
+      </div>
+      <div class="col-sm-4 d-flex justify-content-center">
+        <img src="fb.png" alt="fb" height="120px" width="130px">
+      </div>
+    </div>
+  </div>
+
+<br>
+  <div>
+    <div>
+      <p class="text-center p-3 text-white bg-dark">© 2024 Food Website. All rights reserves.</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+<!-- script -->
+
+<script src="a.js"></script>
